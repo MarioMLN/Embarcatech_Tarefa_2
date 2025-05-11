@@ -1,0 +1,18 @@
+Mario Marques de Lima Neto
+
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+git commit -m "Adiciona o arquivo texto.txt"
+git add texto.txt
+git commit -m "Adiciona o arquivo texto.txt"
+git checkout -b feature-1
+echo "Teste de alteração de conteúdo no branch feature-1" > texto.txt
+git add texto.txt
+git commit -m "Altera texto.txt no branch feature-1"
+git checkout master
+echo "Teste de alteração no branch main" > texto.txt
+git add texto.txt
+git commit -m "Altera conteúdo do texto.txt no branch master"
+git merge feature-1
+git add texto.txt
+git commit -m "Resolve conflito de merge em texto.txt"
+git checkout -b add-comandos
